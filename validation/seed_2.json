@@ -1,0 +1,25 @@
+{
+  "config": {
+    "permutations": 800,
+    "seeds": [
+      2
+    ],
+    "pretrain_steps": 300,
+    "out": "validation/seed_2.json"
+  },
+  "per_seed": [
+    {
+      "seed": 2,
+      "n_params": 1024,
+      "hessian_entries": 1048576,
+      "rho_diagonal": 0.7792644146520278,
+      "rho_full": 0.6725957661290323,
+      "rho_diagonal_signed": 0.6321471774193549,
+      "rho_full_signed": 0.5294498784064087
+    }
+  ],
+  "rho_diagonal_mean": 0.7792644146520278,
+  "rho_diagonal_std": 0.0,
+  "rho_full_mean": 0.6725957661290323,
+  "rho_full_std": 0.0
+}

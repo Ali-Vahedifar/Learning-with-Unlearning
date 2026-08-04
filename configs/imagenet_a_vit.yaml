@@ -1,0 +1,42 @@
+# LwU + LoRA on ViT-B/16 (pretrained ImageNet-21K) — imagenet-a
+# Generated from run manifest. Do not edit by hand.
+
+model:
+  backbone: vit_b16_lora
+  num_classes: 200
+  lora_rank: 8
+  lora_alpha: 16.0
+  lora_dropout: 0.0
+  pretrained: true
+  model_name: vit_base_patch16_224.augreg_in21k
+
+lwu:
+  tau_r: 0.54
+  tau_f: 0.52
+  momentum_decay: 0.95
+  adaptation_rate: 0.005
+  surprise_threshold: 0.05
+  stabilization_decay: 0.1
+  eta_c: 0.005
+  n_c: 10
+  delta_c: 0.5
+
+training:
+  lr: 5e-5
+  weight_decay: 0.0
+  batch_size: 128
+  num_epochs: 50
+  patience: 10
+  seed: 42
+
+dataset:
+  name: imagenet-a
+  root: ./data
+  num_tasks: 10
+  val_split: 0.1
+  image_size: 224
+
+device: cuda
+output_dir: ./results
+experiment_name: imagenet_a_vit_lwu
+num_runs: 10

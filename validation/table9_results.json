@@ -1,0 +1,46 @@
+{
+  "description": "Spearman rank correlation between closed-form SSV and Monte-Carlo Shapley values estimated from Eq. 5 by permutation sampling. Network has 1024 parameters so the full Hessian (1,048,576 entries) can be formed exactly and the cooperative interaction term computed without approximation.",
+  "config": {
+    "permutations": 800,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "utility_evaluations_per_seed": 819200
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "n_params": 1024,
+      "hessian_entries": 1048576,
+      "rho_diagonal": 0.7398065901938344,
+      "rho_full": 0.6783714617159001,
+      "rho_diagonal_signed": 0.6283770273049138,
+      "rho_full_signed": 0.5375376291931908
+    },
+    {
+      "seed": 1,
+      "n_params": 1024,
+      "hessian_entries": 1048576,
+      "rho_diagonal": 0.7518052289714613,
+      "rho_full": 0.6540339009191045,
+      "rho_diagonal_signed": 0.5406021341463415,
+      "rho_full_signed": 0.48313028619197484
+    },
+    {
+      "seed": 2,
+      "n_params": 1024,
+      "hessian_entries": 1048576,
+      "rho_diagonal": 0.7792644146520278,
+      "rho_full": 0.6725957661290323,
+      "rho_diagonal_signed": 0.6321471774193549,
+      "rho_full_signed": 0.5294498784064087
+    }
+  ],
+  "rho_diagonal_mean": 0.7569587446057745,
+  "rho_diagonal_std": 0.016515629371158972,
+  "rho_full_mean": 0.6683337095880123,
+  "rho_full_std": 0.010382776149423909,
+  "delta": -0.0886250350177622
+}

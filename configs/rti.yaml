@@ -1,0 +1,47 @@
+# Configuration for RTI (Robotic Tactile Internet) experiments
+# Best hyperparameters
+
+model:
+  backbone: mlp
+  num_classes: 5
+  input_dim: 25  # Feature dimension after extraction
+  hidden_dims: [256, 128, 64]
+
+lwu:
+  tau_r: 0.54
+  tau_f: 0.32
+  momentum_decay: 0.95
+  adaptation_rate: 0.01
+  surprise_threshold: 0.05
+  stabilization_decay: 0.3
+
+training:
+  lr: 0.001
+  weight_decay: 0.0
+  batch_size: 64
+  num_epochs: 200
+  patience: 10
+  seed: 42
+
+dataset:
+  name: rti
+  root: ./data
+  num_tasks: 5
+  val_split: 0.1
+
+ewc:
+  ewc_lambda: 100
+  gamma: 1.0
+
+si:
+  si_c: 1.0
+  xi: 1.0
+
+lwf:
+  temperature: 2.0
+  alpha: 0.5
+
+device: cuda
+output_dir: ./results
+experiment_name: rti_experiment
+num_runs: 10
