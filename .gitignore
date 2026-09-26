@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# datasets and run outputs (checkpoints, shadow models, samples) are not versioned
+data/
+work/
+*.pt
+*.pth
+*.ckpt
+results_unlearning_*/
+runs/
+reports/
+*.pdf
+*.tex

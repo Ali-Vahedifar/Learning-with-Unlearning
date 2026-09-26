@@ -1,0 +1,65 @@
+{
+  "FT": {
+    "lr": 0.01,
+    "epochs": 10,
+    "alpha": 0.2,
+    "density": 0.5,
+    "validation_gap": 4.284381590949166
+  },
+  "RL": {
+    "lr": 0.001,
+    "epochs": 10,
+    "alpha": 0.2,
+    "density": 0.5,
+    "validation_gap": 2.853333408302733
+  },
+  "GA": {
+    "lr": 1e-05,
+    "epochs": 5,
+    "alpha": 0.2,
+    "density": 0.5,
+    "validation_gap": 4.812222435739305
+  },
+  "IU": {
+    "lr": 0.01,
+    "epochs": 1,
+    "alpha": 20,
+    "density": 0.5,
+    "validation_gap": 4.572962828477226
+  },
+  "BE": {
+    "lr": 1e-06,
+    "epochs": 10,
+    "alpha": 0.2,
+    "density": 0.5,
+    "validation_gap": 4.792222097184923
+  },
+  "BS": {
+    "lr": 1e-06,
+    "epochs": 10,
+    "alpha": 0.2,
+    "density": 0.5,
+    "validation_gap": 4.786666541629367
+  },
+  "l1_sparse": {
+    "lr": 0.01,
+    "epochs": 10,
+    "alpha": 0.0001,
+    "density": 0.5,
+    "validation_gap": 2.6148768279287555
+  },
+  "SalUn": {
+    "lr": 0.005,
+    "epochs": 10,
+    "alpha": 0.2,
+    "density": 0.5,
+    "validation_gap": 1.4546905808978603
+  },
+  "SalUn_soft": {
+    "lr": 0.0005,
+    "epochs": 10,
+    "alpha": 0.2,
+    "density": 0.1,
+    "validation_gap": 2.555556138356527
+  }
+}

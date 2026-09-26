@@ -1,35 +1,11 @@
-# Pinned dependency set for the LwU experiments.
-#
-# These are the versions the Dockerfile installs. Loose lower bounds were
-# replaced with exact pins so that the environment is reproducible; the code
-# is not known to depend on these exact versions, but pinning removes one
-# source of run-to-run difference.
-
-# Core
-torch==2.1.0
-torchvision==0.16.0
-numpy==1.26.4
-scipy==1.11.4
-
-# Machine learning utilities
-scikit-learn==1.3.2
-
-# Vision Transformer backbones (ViT-B/16 + LoRA experiments)
-timm==0.9.12
-
-# Data handling
-pandas==2.1.4
-Pillow==10.1.0
-
-# Configuration and serialization
-PyYAML==6.0.1
-
-# Progress bars and logging
-tqdm==4.66.1
-
-# Testing
-pytest==7.4.4
-
-# Visualization (result plotting)
-matplotlib==3.8.2
-seaborn==0.13.0
+# Versions used for every reported run (single 96 GB workstation GPU, CUDA 12.8).
+torch==2.7.1
+torchvision==0.22.1
+numpy==2.2.6
+scipy==1.17.1
+scikit-learn==1.9.0
+matplotlib==3.11.1
+pandas==3.0.5
+pillow==11.0.0
+tqdm
+pytest
